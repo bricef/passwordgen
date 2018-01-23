@@ -26,11 +26,11 @@ optic        fascinate    endow        proximate
 The `pgpwords.py` util can also convert between pgp words and hex:
 
 ```
-usage: pgpwords.py [-h] [--gen [GEN]] [--towords HEXSTRING] [--tohex WORDS]
+usage: pgpwords.py [-h] [--gen [N]] [--towords HEXSTRING] [--tohex WORDS]
 
 optional arguments:
   -h, --help           show this help message and exit
-  --gen [GEN]          Generate and display a 128 bit phrase
+  --gen [N]            Generate and display an N byte phrase. N=16 by default.
   --towords HEXSTRING  Accept hex-encoded data and output pgp words. Use - for
                        stdin.
   --tohex WORDS        Accept pgp words and output hex-encoded data argument.

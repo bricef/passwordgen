@@ -305,7 +305,7 @@ def wordstring2hexs(wordstring):
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("--gen", nargs='?', const=16, type=int, help="Generate and display a 128 bit phrase")
+    parser.add_argument("--gen", nargs='?', const=16, metavar="N", type=int, help="Generate and display an N byte phrase. N=16 by default.")
     parser.add_argument("--towords", metavar="HEXSTRING", help="Accept hex-encoded data and output pgp words. Use - for stdin.")
     parser.add_argument("--tohex",  metavar="WORDS", help="Accept pgp words and output hex-encoded data argument. Use - for stdin.")
 
