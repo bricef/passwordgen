@@ -18,10 +18,8 @@ function get_word_from_line {
 
 NWORDS=$1
 
-OUTPUT=""
 for i in $(seq 1 $NWORDS)
 do
-  OUTPUT="$(get_word_from_line)\n$OUTPUT"
+  get_word_from_line
 done
 
-echo -ne $OUTPUT
