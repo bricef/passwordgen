@@ -316,18 +316,20 @@ if __name__ == "__main__":
         print(" ".join(chunkstring(data, 2)))
         print(formatwords(hexstring2words(data)))
 
-    if args.towords:
+    elif args.towords:
         if args.towords == "-":
             data = sys.stdin.read()
         else:
             data = args.towords
         print(formatwords(hexstring2words(data)))
 
-    if args.tohex:
+    elif args.tohex:
         if args.tohex == "-":
             data = sys.stdin.read()
         else:
             data = args.tohex
         print(" ".join(wordstring2hexs(data.lower())))
-        
+    
+    else:
+        parser.print_help()
 
