@@ -4,7 +4,7 @@
 Run the `dicegen.sh` executable with the number of word:
 
 ```
-$ ./dicegen.sh 10
+$ ./dicegen.sh 5
 tarpammo
 rogant
 skaar
